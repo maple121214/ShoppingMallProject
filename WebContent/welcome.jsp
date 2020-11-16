@@ -8,6 +8,10 @@ integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9If
 <title>Welcome</title>
 </head>
 <body>
+       <%
+          response.setIntHeader("Refresh" , 5);
+       %>
+      <p> <%=(new java.util.Date()) %>
       <%@ include file="menu.jsp" %>
       <%! String greeting = "웹 쇼핑몰에 오신 것을 환영합니다.";
       String tagline = "Welcome to Web Market!";%>
